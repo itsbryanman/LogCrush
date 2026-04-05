@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools==75.1.0", "wheel==0.44.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logcrush-bench"
+version = "0.1.0"
+description = "Public LogHub benchmark harness for the proprietary LogCrush engine."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = [
+    "click==8.1.7",
+    "drain3==0.9.11",
+    "matplotlib==3.9.2",
+    "numpy==2.1.1",
+    "pandas==2.2.3",
+    "requests==2.32.3",
+    "rich==13.9.2",
+    "tqdm==4.66.5",
+    "typer==0.12.5",
+    "zstandard==0.23.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.3",
+    "ruff==0.6.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/itsbryanman/LogCrush"
+Repository = "https://github.com/itsbryanman/LogCrush"
+
+[project.scripts]
+logcrush-bench = "logcrush_bench.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+license-files = ["LICENSE", "licenses/*.txt"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"

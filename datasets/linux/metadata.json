@@ -1,0 +1,9 @@
+{
+  "archive_name": "Linux.tar.gz",
+  "byte_size": 2344913,
+  "extracted_archive_sha256": "7e1f820d8d45ae086032e515d9ce8d079a102a9b37dcff5b41a8e60b1f857820",
+  "line_count": 25567,
+  "normalized_path": "datasets/linux/linux_normalized.log",
+  "raw_path": "datasets/linux/extracted/Linux.log",
+  "sha256": "7e1f820d8d45ae086032e515d9ce8d079a102a9b37dcff5b41a8e60b1f857820"
+}
