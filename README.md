@@ -126,7 +126,7 @@ The public benchmark harness in this repository is source-available under Busine
 
 The separately distributed proprietary `logcrush-engine` binaries are not included here and are
 licensed under the commercial terms shipped with those releases.
-
+email bryan@backwoodsdevelopment.com for licensing 
 ## Development Checks
 
 ```bash
